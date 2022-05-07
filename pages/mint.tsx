@@ -6,7 +6,7 @@ import { HeaderMenuButtons } from '../components/HeaderMenuButtons';
 import { MintHero } from '../components/MintHero';
 import { HeroImage } from '../components/HeroImage';
 
-const Home: NextPage = () => {
+const Mint: NextPage = () => {
   return (
     <MainLayout>
       <HeaderMenu>
@@ -15,7 +15,6 @@ const Home: NextPage = () => {
       <Box
         display="flex"
         justifyContent="space-between"
-        gap="32px"
         mt={{ base: 8, xl: 12, '2xl': 24 }}
       >
         <MintHero />
@@ -25,4 +24,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Mint;

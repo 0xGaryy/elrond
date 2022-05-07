@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 
+const withFonts = require('next-fonts');
+module.exports = withFonts({
+  webpack(config, options) {
+    return config;
+  },
+});
+
 const nextConfig = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.resolve.fallback = {

@@ -20,13 +20,14 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
           alignItems="center"
           mt={2}
           mb={2}
-          justifyContent={{ base: 'center', md: 'flex-start' }}
+          justifyContent={{ base: 'center'}}
         >
           <Box>
             <Text
               as="span"
               fontSize={{ base: 'md', sm: 'xl' }}
               fontWeight="bold"
+              textColor="black"
             >
               Allowlist is enabled. You are{' '}
             </Text>
@@ -38,6 +39,7 @@ export const NFTAllowlistEnabled: FC<NFTAllowlistEnabledProps> = ({
                 as="span"
                 fontWeight="bold"
                 fontSize={{ base: 'md', sm: 'xl' }}
+                textColor="black"
               >
                 on
               </Text>

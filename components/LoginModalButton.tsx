@@ -48,7 +48,7 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
       {isLoggedIn ? (
         <ActionButton onClick={logout}>Disconnect</ActionButton>
       ) : (
-        <ActionButton onClick={open}>Connect</ActionButton>
+        <ActionButton  onClick={open}>Connect</ActionButton>
       )}
       <Modal isOpen={opened} size="sm" onClose={close} isCentered>
         <CustomModalOverlay />
@@ -68,7 +68,7 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
               <Flex
                 alignItems="center"
                 backdropFilter="blur(3px)"
-                bgColor="blackAlpha.700"
+                bgColor="black"
                 justifyContent="center"
                 position="absolute"
                 inset={0}

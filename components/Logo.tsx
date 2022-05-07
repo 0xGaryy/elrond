@@ -11,29 +11,32 @@ export const Logo = () => {
         position="relative"
         userSelect="none"
       >
-        <Text
-          position="absolute"
-          right="0"
-          top="0"
-          fontSize="10px"
-          fontWeight="semibold"
-          px={1.5}
-          borderRadius="sm"
-          color="elvenTools.color2.base"
-        >
-          devnet
-        </Text>
+        <Box as="img" src="/Logo.png" alt="" width="100px" height="100px" />
+
 
         <Text
-          as="span"
-          cursor="pointer"
-          mb={0}
-          fontSize="4xl"
-          fontWeight="black"
-          color="elvenTools.white"
-        >
-          Weird Faces
-        </Text>
+        as="h1"
+        fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
+        textAlign={{ base: 'center', md: 'center' }}
+        fontWeight="black"
+        lineHeight="shorter"
+        mb={5}
+        textColor="black"
+        
+      ></Text>
+
+        <h1 >Beniamin</h1>
+        <h1 >CHAPTER 1</h1>
+        <style jsx>{`
+    @font-face {
+      font-family: 'Sofia';
+          src: url('/fonts/SofiaProBold.ttf');
+          src: url('/fonts/SofiaProRegular.ttf');
+    }
+        h1 {
+          font-family: 'Sofia';
+        }
+      `}</style>
       </Box>
     </NextLink>
   );

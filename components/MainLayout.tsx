@@ -1,7 +1,6 @@
 import { Container, Box, Text } from '@chakra-ui/react';
 import { FC, memo } from 'react';
 import { MetaHead, MetaHeadProps } from './MetaHead';
-import { Footer } from './Footer';
 
 export const MainLayout: FC<MetaHeadProps> = memo(
   ({ children, metaTitle, metaDescription, metaImage, metaUrl }) => {
@@ -18,7 +17,6 @@ export const MainLayout: FC<MetaHeadProps> = memo(
             <Box>{children}</Box>
           </Container>
         </Box>
-        <Footer />
       </>
     );
   },

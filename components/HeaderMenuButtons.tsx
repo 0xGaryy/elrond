@@ -16,9 +16,6 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
     router.push('/mint');
   }, [router]);
 
-  const handleAboutClick = useCallback(() => {
-    router.push('/about');
-  }, [router]);
 
   return (
     <Box
@@ -31,17 +28,7 @@ export const HeaderMenuButtons: FC<HeaderMenuButtonsProps> = ({ enabled }) => {
         },
       }}
     >
-      {enabled.includes('about') && (
-        <Button
-          variant="link"
-          color="elvenTools.white"
-          _focus={{ outline: 'none' }}
-          mr={2}
-          onClick={handleAboutClick}
-        >
-          About
-        </Button>
-      )}
+  
 
       <SocialMediaIcons />
 

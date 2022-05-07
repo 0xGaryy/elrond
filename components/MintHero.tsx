@@ -133,23 +133,37 @@ export const MintHero = () => {
       <Text
         as="h1"
         fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
-        textAlign={{ base: 'center', md: 'left' }}
+        textAlign={{ base: 'center', md: 'center' }}
         fontWeight="black"
         lineHeight="shorter"
         mb={5}
+        textColor="black"
+        
       >
-        ⚡ Mint some of them
+        <h1 >MAKE THE HISTORY</h1>
+        <style jsx>{`
+    @font-face {
+      font-family: 'Sofia';
+          src: url('/fonts/SofiaProBold.ttf');
+          src: url('/fonts/SofiaProRegular.ttf');
+    }
+        h1 {
+          font-family: 'Sofia';
+        }
+      `}</style>
+       
       </Text>
       <Text
+        marginTop="64px"
         as="h2"
         fontSize="lg"
         fontWeight="thin"
-        textAlign={{ base: 'center', md: 'left' }}
+        mb={5}
+        textAlign={{ base: 'center'}}
+        textColor="black"
       >
-        To be able to mint you have to be logged in to be able to mint. Remember
-        that it will mint only on the devent. If you want to do that, you need
-        to connect using one of the methods and the devnet address with some
-        xEGLD funds.
+        Buy the first Champagne on the Elrond Blockchain in collaboration with Champagne Cattier. Limited to 500 pieces.
+For each NFT minted, you will receive a bottle of Cattier with your NFT printed on it.
       </Text>
       {isMintingStarted ? (
         <Box mt={6}>
@@ -164,7 +178,7 @@ export const MintHero = () => {
                 <Box
                   mt={6}
                   display="flex"
-                  justifyContent={isContentCentered ? 'center' : 'flex-start'}
+                  justifyContent={'center'}
                 >
                   <LoginModalButton />
                 </Box>
@@ -197,6 +211,7 @@ export const MintHero = () => {
                     as="span"
                     fontSize={{ base: 'md', sm: 'xl' }}
                     fontWeight="bold"
+                    color="black"
                   >
                     Check your NFTs:
                   </Text>
@@ -204,7 +219,7 @@ export const MintHero = () => {
                     as="a"
                     ml={3}
                     target="_blank"
-                    color="elvenTools.color2.base"
+                    color="elvenTools.color3.base"
                     fontSize="2xl"
                     fontWeight="black"
                     textDecoration="underline"
@@ -213,6 +228,7 @@ export const MintHero = () => {
                   >
                     here
                   </Text>
+                  
                 </Box>
               )}
             </Authenticated>
@@ -220,14 +236,16 @@ export const MintHero = () => {
         </Box>
       ) : (
         <Box>
-          <Text fontSize="2xl" fontWeight="bold" mt={10}>
+          <Text fontSize="2xl" fontWeight="bold" mt={10} textColor="black">
             Minting was not started yet.
           </Text>
-          <Text fontSize="2xl" fontWeight="bold">
+          <Text fontSize="2xl" fontWeight="bold" textColor="black">
             Please be back soon!
           </Text>
         </Box>
       )}
+  
+ 
     </Box>
   );
 };

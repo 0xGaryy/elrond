@@ -9,16 +9,6 @@ export const SocialMediaIcons = () => {
         bgColor="#fff"
         style={{ width: 30, height: 30 }}
       />
-      <SocialIcon
-        url="https://www.github.com/ElvenTools"
-        bgColor="#fff"
-        style={{ width: 30, height: 30 }}
-      />
-      <SocialIcon
-        url="https://www.telegram.me/juliancwirko"
-        bgColor="#fff"
-        style={{ width: 30, height: 30 }}
-      />
     </Box>
   );
 };
