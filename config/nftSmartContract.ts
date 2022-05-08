@@ -16,7 +16,7 @@ export const tokensLimitPerAddressTotal = 50;
 export const collectionTicker = 'BENIAMIN';
 
 // Start or pause minting process. UI will react on this. Remember to keep itin in sync with Smart Contract. This is very important.
-export const isMintingStarted = true;
+export const isMintingStarted = false;
 
 // Enable/Disable the drop. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
 export const isDropActive = false;
