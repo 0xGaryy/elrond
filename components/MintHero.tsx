@@ -131,6 +131,7 @@ export const MintHero = () => {
   return (
     <Box width="100%">
       <Text
+      marginTop="64px"
         as="h1"
         fontSize={{ base: '2xl', md: '3xl', lg: '5xl' }}
         textAlign={{ base: 'center', md: 'center' }}
@@ -140,6 +141,7 @@ export const MintHero = () => {
         textColor="black"
         
       >
+        
         <h1 >MAKE THE HISTORY</h1>
         <style jsx>{`
     @font-face {

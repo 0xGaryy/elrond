@@ -10,7 +10,7 @@ export const smartContractAddress =
 export const collectionSize = 10;
 
 // Number of the NFTs for one address in total
-export const tokensLimitPerAddressTotal = 5;
+export const tokensLimitPerAddressTotal = 50;
 
 // Collection ticker
 export const collectionTicker = 'BENIAMIN';

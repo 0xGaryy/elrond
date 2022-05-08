@@ -27,7 +27,8 @@ export const Logo = () => {
     
      
 
-    <a href="https://www.beniamins-adventures.com"><h1><b>HOME</b></h1></a>
+    <a href="https://www.beniamins-adventures.com"><h1><b>HOME </b></h1></a>
+    <a ></a>
         <a href="https://www.beniamins-adventures.com/chapter1"><h1 ><b>CHAPTER 1</b></h1></a>
         <style jsx>{`
     @font-face {
