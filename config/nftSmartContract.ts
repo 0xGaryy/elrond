@@ -7,7 +7,7 @@ export const smartContractAddress =
   'erd1qqqqqqqqqqqqqpgqn2hhlzzfuh8me3lsfwdr92gu3f52qhsxdpcs5qgy5y';
 
 // Amount of the NFTs in the collection
-export const collectionSize = 10;
+export const collectionSize = 500;
 
 // Number of the NFTs for one address in total
 export const tokensLimitPerAddressTotal = 50;
@@ -16,7 +16,7 @@ export const tokensLimitPerAddressTotal = 50;
 export const collectionTicker = 'BENIAMIN';
 
 // Start or pause minting process. UI will react on this. Remember to keep itin in sync with Smart Contract. This is very important.
-export const isMintingStarted = true;
+export const isMintingStarted = false;
 
 // Enable/Disable the drop. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
 export const isDropActive = false;
