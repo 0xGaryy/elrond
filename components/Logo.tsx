@@ -1,9 +1,9 @@
 import NextLink from 'next/link';
 import { Box, Text, keyframes } from '@chakra-ui/react';
+import Link from 'next/link';
 
 export const Logo = () => {
   return (
-    <NextLink href="/">
       <Box
         display="flex"
         alignItems="center"
@@ -24,9 +24,11 @@ export const Logo = () => {
         textColor="black"
         
       ></Text>
+    
+     
 
-        <h1 >Beniamin</h1>
-        <h1 >CHAPTER 1</h1>
+    <a href="https://www.beniamins-adventures.com"><h1><b>HOME</b></h1></a>
+        <a href="https://www.beniamins-adventures.com/chapter1"><h1 ><b>CHAPTER 1</b></h1></a>
         <style jsx>{`
     @font-face {
       font-family: 'Sofia';
@@ -38,6 +40,6 @@ export const Logo = () => {
         }
       `}</style>
       </Box>
-    </NextLink>
+    
   );
 };
