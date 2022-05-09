@@ -16,7 +16,7 @@ export const tokensLimitPerAddressTotal = 50;
 export const collectionTicker = 'BENIAMIN';
 
 // Start or pause minting process. UI will react on this. Remember to keep itin in sync with Smart Contract. This is very important.
-export const isMintingStarted = false;
+export const isMintingStarted = true;
 
 // Enable/Disable the drop. UI will react on this. Remember to keep it in in sync with Smart Contract. This is very important.
 export const isDropActive = false;
@@ -34,4 +34,4 @@ export const mintTxBaseGasLimit = 14000000;
 export const mintFunctionName = 'mint';
 
 // Single token seling price - configurable on smart contract when deployed 1 EGLD = 10^18
-export const tokenSellingPrice = '500000000000000000';
+export const tokenSellingPrice = '10000000000000000';
